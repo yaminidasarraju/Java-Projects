@@ -1,0 +1,19 @@
+name: java-linter
+
+on:
+  pull_request:
+    branches: [main]
+    paths: ['**.java']
+    
+jobs:
+  java-linter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4.1.0
+
+      - name: Run check style
+        uses: nikitasavinov/checkstyle-action@0.6.0
+        with:
+          level: warning
+          fail_on_error: true
