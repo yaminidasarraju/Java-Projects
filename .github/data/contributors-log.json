@@ -10,10 +10,12 @@
   },
   "Simple-Calculator": {
     "contributor-name": [
-      "REC-SAM"
+      "REC-SAM",
+      "iamwatchdogs"
     ],
     "pull-request-number": [
-      "3"
+      "3",
+      "4"
     ],
     "demo-path": "Simple-Calculator"
   }

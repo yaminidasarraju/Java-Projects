@@ -10,7 +10,7 @@ Welcome to **Java-Projects**, your friendly initiation into the world of open-so
 | Project Title | Contributor Names | Pull Requests | Demo |
 | --- | --- | --- | --- |
 | {init} | [iamwatchdogs](https://github.com/iamwatchdogs "goto iamwatchdogs profile") | [#1](https://github.com/Grow-with-Open-Source/Java-Projects/pull/1 "visit pr \#1") | [/Grow-with-Open-Source/Java-Projects/](https://github.com/Grow-with-Open-Source/Java-Projects "view the result of {init}") |
-| Simple-Calculator | [REC-SAM](https://github.com/REC-SAM "goto REC-SAM profile") | [#3](https://github.com/Grow-with-Open-Source/Java-Projects/pull/3 "visit pr \#3") | [/Grow-with-Open-Source/Java-Projects/Simple-Calculator/](Simple-Calculator "view the result of Simple-Calculator") |
+| Simple-Calculator | [REC-SAM](https://github.com/REC-SAM "goto REC-SAM profile"), [iamwatchdogs](https://github.com/iamwatchdogs "goto iamwatchdogs profile") | [#3](https://github.com/Grow-with-Open-Source/Java-Projects/pull/3 "visit pr \#3"), [#4](https://github.com/Grow-with-Open-Source/Java-Projects/pull/4 "visit pr \#4") | [/Grow-with-Open-Source/Java-Projects/Simple-Calculator/](Simple-Calculator "view the result of Simple-Calculator") |
 <!-- TABLE ENDS -->
 
 </div>
