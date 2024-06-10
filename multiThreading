@@ -1,0 +1,42 @@
+class MyThread extends Thread {
+    private int count = 0;
+
+    public MyThread(String name) {
+        super(name);
+    }
+
+    public void run() {
+        for (int i = 0; i < 5; i++) {
+            System.out.println(Thread.currentThread().getName() + ": " + count++);
+            try {
+                // Sleeping for a random duration between 0 and 1000 milliseconds
+                Thread.sleep((long) (Math.random() * 1000));
+                // Yielding to allow other threads to execute
+                Thread.yield();
+                // Waiting for a random duration between 0 and 1000 milliseconds
+                wait((long) (Math.random() * 1000));
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        System.out.println(Thread.currentThread().getName() + " exiting.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        MyThread t1 = new MyThread("Thread 1");
+        MyThread t2 = new MyThread("Thread 2");
+        MyThread t3 = new MyThread("Thread 3");
+
+        // Setting different priorities for threads
+        t1.setPriority(Thread.MAX_PRIORITY);
+        t2.setPriority(Thread.NORM_PRIORITY);
+        t3.setPriority(Thread.MIN_PRIORITY);
+
+        // Starting threads
+        t1.start();
+        t2.start();
+        t3.start();
+    }
+}
